@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "thai_language.h": "c",
+        "m25pe16.h": "c",
+        "hzk.h": "c",
+        "main.h": "c",
+        "word_lib.h": "c",
+        "thai_font.h": "c",
+        "typeinfo": "c",
+        "pic_exec.h": "c",
+        "uart_config.h": "c",
+        "down_status.h": "c",
+        "drv_glcd.h": "c",
+        "file_newstruct.h": "c",
+        "comm.h": "c",
+        "string.h": "c",
+        "download.h": "c"
+    }
+}

@@ -1,0 +1,15 @@
+
+
+LR_IROM1 0x00000000 0x400000  ; load region size_region加载区+长度
+{    
+    ER_IROM1 0x00000000 0x400000  ; load address = execution address执行区+长度 //第一执行区
+	{  
+        *.o (NUC_INIT, +First)		 ; *.o:匹配所有目标   NUC_INIT：汇编程序入口 First：存放在执行区起始位置 //程序入口
+        *(InRoot$$Sections)
+        .ANY (+RO)	 				;ANY:匹配所有目标文件和库 //所有剩余代码和常量放此处
+    }
+    RW_RAM1 +0  ; RW_RAM1 start address is after ER_ROM1     //第二执行区
+	{  
+        .ANY (+RW +ZI)			;所有变量
+    }
+}
