@@ -16,6 +16,7 @@
 #include "sdh.h"
 #include "thai_language.h"
 #include "thai_font.h"
+#include "vietnam_font.h"
 
 typedef int INT_32;
 

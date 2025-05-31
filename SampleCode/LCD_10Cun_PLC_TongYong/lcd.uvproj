@@ -379,7 +379,7 @@
               <MiscControls>--gnu;</MiscControls>
               <Define>LCD_SIZE=LCDTYPE_8,NEWBOARD_IO MODBUS_972</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Driver\Include;..\LCD_10Cun_PLC_TongYong;..\..\ThirdParty\FATFS\src;.\cpGui;.\Form;.\thai_language;.\newboard;.\modbus;.\APP_PLC</IncludePath>
+              <IncludePath>..\..\Driver\Include;..\LCD_10Cun_PLC_TongYong;..\..\ThirdParty\FATFS\src;.\cpGui;.\Form;.\thai_language;.\newboard;.\modbus;.\APP_PLC;.\vietnam_language</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -832,6 +832,16 @@
               <FileName>改动说明.txt</FileName>
               <FileType>5</FileType>
               <FilePath>.\改动说明.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Vietnam_language</GroupName>
+          <Files>
+            <File>
+              <FileName>vietnam_font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\vietnam_language\vietnam_font.c</FilePath>
             </File>
           </Files>
         </Group>

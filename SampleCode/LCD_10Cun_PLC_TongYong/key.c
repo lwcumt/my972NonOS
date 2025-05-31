@@ -3824,6 +3824,19 @@ switch(keycode)
 								Language++;
 								if(Language>1)//3
 								{
+#if (VIETNAM_FUN_EN == 1)			
+									if(Language>VIETNAMESE)
+									{
+										Language=0;
+									}
+									else
+									{
+									if(Language!=VIETNAMESE)
+										Language=VIETNAMESE;
+									else
+										Language=0;
+									}
+#elif (THAILAND_FUN_EN == 1)			
 									if(Language>THAILAND)
 									{
 										Language=0;
@@ -3834,7 +3847,10 @@ switch(keycode)
 										Language=THAILAND;
 									else
 										Language=0;
-								}
+									}
+#else
+									Language=0;		
+#endif
 								}
 								//***********界面语言更新
 								x=PARA_START_X1,y=PARA_START_Y;back_color=TEXT_TAB_BACK_COLOR,gap=PARA_ROW_GAP;//
@@ -10615,8 +10631,17 @@ FastRead_Datas_Start(add);
 
 *psize=ReadFlash_Datas();
 FlashChip_Dis;
-if(Language>THAILAND)
-	Language=0;
+#if (VIETNAM_FUN_EN == 1)
+	if(Language>VIETNAMESE)
+		Language=0;
+#elif (THAILAND_FUN_EN == 1)
+	if(Language>THAILAND)
+		Language=0;
+#else
+	if(Language>SPANISH)
+		Language=0;
+#endif
+Language=VIETNAMESE;
 }
 void SaveLanguage(void)  //保存语言
 {

@@ -1,3 +1,6 @@
+
+
+cutmachine-os
 # Disclaimer
 The Software is furnished "AS IS", without warranty as to performance or results, and
 the entire risk as to performance or results is assumed by YOU. Nuvoton disclaims all
@@ -25,4 +28,8 @@ Please note that all data and specifications are subject to change without notic
 trademarks of products and companies mentioned in this datasheet belong to their respective
 owners.
 
+<<<<<<< .mine
 **Copyright (C) 2016 Nuvoton Technology Corp. All rights reserved**
+=======
+
+>>>>>>> .theirs

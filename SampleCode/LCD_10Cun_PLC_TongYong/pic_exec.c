@@ -707,6 +707,9 @@ switch(Language)
 	//unsigned short const Thai_Font17_Pic_63[];   ////1：电脑自检，数据加载.，，，需要六秒，请稍等  ????????????????，  ?????????????，。。   ??????? 6 ??????  ???????。
 	Thai_Draw(Thai_Font17_Pic_63,COMPUTER_TEST_HINT_X,COMPUTER_TEST_HINT_Y,RED_COLOR,1,0xffff);
 	 break;
+	case VIETNAMESE: //
+		vietnam_print(Viet_Font24_Pic_63,COMPUTER_TEST_HINT_X,COMPUTER_TEST_HINT_Y,RED_COLOR,1,0xffff);
+		break;
 	}
 
 //FileFolderRead("开机画面.bmp",(unsigned char*)START_PIC_sdram);//读开机画面

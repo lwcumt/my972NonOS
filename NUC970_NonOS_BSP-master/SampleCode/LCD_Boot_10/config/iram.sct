@@ -1,0 +1,16 @@
+
+
+LR_IROM1 0x3c008000 0xa000  ; load region size_region	// 40k
+{    
+    ER_IROM1 0x3c000800 0xa000  ; load address = execution address
+	{  
+        *.o (NUC_INIT, +First)
+        *(InRoot$$Sections)
+        .ANY (+RO)
+    }
+    RW_RAM1 +0  ; RW_RAM1 start address is after ER_ROM1
+	{  
+        .ANY (+RW +ZI)
+    }
+}
+

@@ -13,6 +13,10 @@
 
 
 
+
+
+
+
 //----------- 区块背景颜色------------
 #define TEXT_TAB_BACK_COLOR		0xef7d//0xce79
 #define TEXT_TAB_FRONT_COLOR	0xFFE6//YELLOW_COLOR
@@ -1105,12 +1109,17 @@
 #define UNIT_MM		0//公
 #define UNIT_MIL	1//英
 //语言
-#define CHN_HAN    0
-#define ENGLISH    1
-#define INDONSIA   2
-#define PORTUGAL   3
-#define SPANISH	   4
-#define THAILAND   5
+typedef enum {
+    CHN_HAN     = 0,
+    ENGLISH     = 1,
+    INDONSIA    = 2,
+    PORTUGAL    = 3,
+    SPANISH     = 4,
+    THAILAND    = 5,
+    VIETNAMESE  = 6
+} LanguageType;
+
+
 
 
 //极限

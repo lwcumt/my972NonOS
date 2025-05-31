@@ -1,7 +1,7 @@
 #include "thai_font.h"
 
 
-#include "thai_font.h"
+#if (THAILAND_FUN_EN == 1)
 
 
 
@@ -4019,3 +4019,134 @@ unsigned short const Thai_Font17_Pic_63[] = {
 0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000
 };
 
+#else
+// 重新定义所有数组为空
+unsigned short const Thai_Font17_Pic_1[] = { 0 };
+unsigned short const Thai_Font17_Pic_2[] = { 0 };
+unsigned short const Thai_Font17_Pic_3[] = { 0 };
+unsigned short const Thai_Font17_Pic_4[] = { 0 };
+unsigned short const Thai_Font17_Pic_5[] = { 0 };
+unsigned short const Thai_Font17_Pic_6[] = { 0 };
+unsigned short const Thai_Font17_Pic_7[] = { 0 };
+unsigned short const Thai_Font17_Pic_8[] = { 0 };
+unsigned short const Thai_Font17_Pic_9[] = { 0 };
+unsigned short const Thai_Font17_Pic_10[] = { 0 };
+unsigned short const Thai_Font17_Pic_11[] = { 0 };
+unsigned short const Thai_Font17_Pic_12[] = { 0 };
+unsigned short const Thai_Font17_Pic_13[] = { 0 };
+unsigned short const Thai_Font17_Pic_14[] = { 0 };
+unsigned short const Thai_Font17_Pic_15[] = { 0 };
+unsigned short const Thai_Font17_Pic_16[] = { 0 };
+unsigned short const Thai_Font17_Pic_17[] = { 0 };
+unsigned short const Thai_Font17_Pic_18[] = { 0 };
+unsigned short const Thai_Font17_Pic_19[] = { 0 };
+unsigned short const Thai_Font17_Pic_20[] = { 0 };
+unsigned short const Thai_Font17_Pic_21[] = { 0 };
+unsigned short const Thai_Font17_Pic_22[] = { 0 };
+unsigned short const Thai_Font17_Pic_23[] = { 0 };
+unsigned short const Thai_Font17_Pic_24[] = { 0 };
+unsigned short const Thai_Font17_Pic_25[] = { 0 };
+unsigned short const Thai_Font17_Pic_26[] = { 0 };
+unsigned short const Thai_Font17_Pic_27[] = { 0 };
+unsigned short const Thai_Font17_Pic_28[] = { 0 };
+unsigned short const Thai_Font17_Pic_29[] = { 0 };
+unsigned short const Thai_Font17_Pic_30[] = { 0 };
+unsigned short const Thai_Font17_Pic_31[] = { 0 };
+unsigned short const Thai_Font17_Pic_32[] = { 0 };
+unsigned short const Thai_Font17_Pic_33[] = { 0 };
+unsigned short const Thai_Font17_Pic_34[] = { 0 };
+unsigned short const Thai_Font17_Pic_35[] = { 0 };
+unsigned short const Thai_Font17_Pic_36[] = { 0 };
+unsigned short const Thai_Font17_Pic_37[] = { 0 };
+unsigned short const Thai_Font17_Pic_38[] = { 0 };
+unsigned short const Thai_Font17_Pic_39[] = { 0 };
+unsigned short const Thai_Font17_Pic_40[] = { 0 };
+unsigned short const Thai_Font17_Pic_41[] = { 0 };
+unsigned short const Thai_Font17_Pic_42[] = { 0 };
+unsigned short const Thai_Font17_Pic_43[] = { 0 };
+unsigned short const Thai_Font17_Pic_44[] = { 0 };
+unsigned short const Thai_Font17_Pic_45[] = { 0 };
+unsigned short const Thai_Font17_Pic_46[] = { 0 };
+unsigned short const Thai_Font17_Pic_47[] = { 0 };
+unsigned short const Thai_Font17_Pic_48[] = { 0 };
+unsigned short const Thai_Font17_Pic_49[] = { 0 };
+unsigned short const Thai_Font17_Pic_50[] = { 0 };
+unsigned short const Thai_Font17_Pic_51[] = { 0 };
+unsigned short const Thai_Font17_Pic_52[] = { 0 };
+unsigned short const Thai_Font17_Pic_53[] = { 0 };
+unsigned short const Thai_Font17_Pic_54[] = { 0 };
+unsigned short const Thai_Font17_Pic_55[] = { 0 };
+unsigned short const Thai_Font17_Pic_56[] = { 0 };
+unsigned short const Thai_Font17_Pic_57[] = { 0 };
+unsigned short const Thai_Font17_Pic_58[] = { 0 };
+unsigned short const Thai_Font17_Pic_59[] = { 0 };
+unsigned short const Thai_Font17_Pic_60[] = { 0 };
+unsigned short const Thai_Font17_Pic_61[] = { 0 };
+unsigned short const Thai_Font17_Pic_62[] = { 0 };
+unsigned short const Thai_Font17_Pic_63[] = { 0 };
+
+unsigned short const Thai_Font25_Pic_1[] = { 0 };
+unsigned short const Thai_Font25_Pic_2[] = { 0 };
+unsigned short const Thai_Font25_Pic_3[] = { 0 };
+unsigned short const Thai_Font25_Pic_4[] = { 0 };
+unsigned short const Thai_Font25_Pic_5[] = { 0 };
+unsigned short const Thai_Font25_Pic_6[] = { 0 };
+unsigned short const Thai_Font25_Pic_7[] = { 0 };
+unsigned short const Thai_Font25_Pic_8[] = { 0 };
+unsigned short const Thai_Font25_Pic_9[] = { 0 };
+unsigned short const Thai_Font25_Pic_10[] = { 0 };
+unsigned short const Thai_Font25_Pic_11[] = { 0 };
+unsigned short const Thai_Font25_Pic_12[] = { 0 };
+unsigned short const Thai_Font25_Pic_13[] = { 0 };
+unsigned short const Thai_Font25_Pic_14[] = { 0 };
+unsigned short const Thai_Font25_Pic_15[] = { 0 };
+unsigned short const Thai_Font25_Pic_16[] = { 0 };
+unsigned short const Thai_Font25_Pic_17[] = { 0 };
+unsigned short const Thai_Font25_Pic_18[] = { 0 };
+unsigned short const Thai_Font25_Pic_19[] = { 0 };
+unsigned short const Thai_Font25_Pic_20[] = { 0 };
+unsigned short const Thai_Font25_Pic_21[] = { 0 };
+unsigned short const Thai_Font25_Pic_22[] = { 0 };
+unsigned short const Thai_Font25_Pic_23[] = { 0 };
+unsigned short const Thai_Font25_Pic_24[] = { 0 };
+unsigned short const Thai_Font25_Pic_25[] = { 0 };
+unsigned short const Thai_Font25_Pic_26[] = { 0 };
+unsigned short const Thai_Font25_Pic_27[] = { 0 };
+unsigned short const Thai_Font25_Pic_28[] = { 0 };
+unsigned short const Thai_Font25_Pic_29[] = { 0 };
+unsigned short const Thai_Font25_Pic_30[] = { 0 };
+unsigned short const Thai_Font25_Pic_31[] = { 0 };
+unsigned short const Thai_Font25_Pic_32[] = { 0 };
+unsigned short const Thai_Font25_Pic_33[] = { 0 };
+unsigned short const Thai_Font25_Pic_34[] = { 0 };
+unsigned short const Thai_Font25_Pic_35[] = { 0 };
+unsigned short const Thai_Font25_Pic_36[] = { 0 };
+unsigned short const Thai_Font25_Pic_37[] = { 0 };
+unsigned short const Thai_Font25_Pic_38[] = { 0 };
+unsigned short const Thai_Font25_Pic_39[] = { 0 };
+unsigned short const Thai_Font25_Pic_40[] = { 0 };
+unsigned short const Thai_Font25_Pic_41[] = { 0 };
+unsigned short const Thai_Font25_Pic_42[] = { 0 };
+unsigned short const Thai_Font25_Pic_43[] = { 0 };
+unsigned short const Thai_Font25_Pic_44[] = { 0 };
+unsigned short const Thai_Font25_Pic_45[] = { 0 };
+unsigned short const Thai_Font25_Pic_46[] = { 0 };
+unsigned short const Thai_Font25_Pic_47[] = { 0 };
+unsigned short const Thai_Font25_Pic_48[] = { 0 };
+unsigned short const Thai_Font25_Pic_49[] = { 0 };
+unsigned short const Thai_Font25_Pic_50[] = { 0 };
+unsigned short const Thai_Font25_Pic_51[] = { 0 };
+unsigned short const Thai_Font25_Pic_52[] = { 0 };
+unsigned short const Thai_Font25_Pic_53[] = { 0 };
+unsigned short const Thai_Font25_Pic_54[] = { 0 };
+unsigned short const Thai_Font25_Pic_55[] = { 0 };
+unsigned short const Thai_Font25_Pic_56[] = { 0 };
+unsigned short const Thai_Font25_Pic_57[] = { 0 };
+unsigned short const Thai_Font25_Pic_58[] = { 0 };
+unsigned short const Thai_Font25_Pic_59[] = { 0 };
+unsigned short const Thai_Font25_Pic_60[] = { 0 };
+unsigned short const Thai_Font25_Pic_61[] = { 0 };
+unsigned short const Thai_Font25_Pic_62[] = { 0 };
+unsigned short const Thai_Font25_Pic_63[] = { 0 };
+
+#endif
