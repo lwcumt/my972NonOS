@@ -41,3 +41,4 @@ lst/
 *.rar
 !ThirdParty/FATFS/doc/img/mkfatimg.zip
 
+.vscode
