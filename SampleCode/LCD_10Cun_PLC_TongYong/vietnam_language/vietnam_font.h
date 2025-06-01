@@ -69,6 +69,9 @@ extern unsigned char const Viet_Font24_Pic_61[]; // 61：脉冲当量模式
 extern unsigned char const Viet_Font24_Pic_62[]; // 62：请输入脉冲当量
 extern unsigned char const Viet_Font24_Pic_63_1[]; // 63：电脑自检，数据加载.，，，需要六秒，请稍等
 extern unsigned char const Viet_Font24_Pic_63_2[]; // 63_2: 需要六秒，请稍等
+extern unsigned char const Viet_Font24_Pic_ACSERVO_ERR[];
+
+
 
 
 void vietnam_print(unsigned char *pic,int x,int y,unsigned short fcolor,unsigned char bflag,unsigned int bkcolor);

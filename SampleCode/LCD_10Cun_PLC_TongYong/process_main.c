@@ -3970,6 +3970,9 @@ switch(StartCheck_mode)
 											//unsigned short const Thai_Font17_Pic_1[];   ////1：电脑检测完成，请按运行按键 ! >> 点击此处 ???????????????????? ??????????????！》????????
 												Thai_Draw(Thai_Font17_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
 												break;
+										case VIETNAMESE:
+												vietnam_print(Viet_Font24_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
+									 break;
 										}
 									}
 								StartCheck_mode++;
@@ -3999,6 +4002,9 @@ switch(StartCheck_mode)
 										case THAILAND:
 
 													break;
+										case VIETNAMESE:
+												
+											break;
 										}
 									StartCheck_mode=9;//5
 									CodeSensorTime_AB=0;
@@ -4026,6 +4032,10 @@ switch(StartCheck_mode)
 											case THAILAND:
 												//unsigned short const Thai_Font17_Pic_54[];   ////54：请输入密码 ?????????????
 												Thai_Draw(Thai_Font17_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
+														break;
+											case VIETNAMESE:
+												//unsigned short const Viet_Font24_Pic_54[];   ////54：请输入密码 ?????????????
+												vietnam_print(Viet_Font24_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
 														break;
 											}
 										PassCheck_dis(PASS_HINT_X,PASS_HINT_Y);
@@ -4077,6 +4087,9 @@ switch(StartCheck_mode)
 						case THAILAND:
 
 								break;
+						case VIETNAMESE:
+								Printf24("Front-Limit is off!",START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
+							break;
 						}	
 					}
 				}
@@ -4118,6 +4131,9 @@ switch(StartCheck_mode)
 						case THAILAND:
 
 								break;
+						case VIETNAMESE:
+								
+							break;
 						}
 					}		
 				}
@@ -4152,6 +4168,9 @@ switch(StartCheck_mode)
 						case THAILAND:
 
 								break;
+						case VIETNAMESE:
+								Printf24("Front-Limit is off!",START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
+							break;
 						}
 					}
 				else		//前极限---ok 恢复
@@ -4180,6 +4199,9 @@ switch(StartCheck_mode)
 							case THAILAND:
 											//unsigned short const Thai_Font17_Pic_1[];   ////1：电脑检测完成，请按运行按键 ! >> 点击此处 ???????????????????? ??????????????！》????????
 												Thai_Draw(Thai_Font17_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
+									 break;
+							case VIETNAMESE:
+											vietnam_print(Viet_Font24_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
 									 break;
 							}
 						}
@@ -4253,6 +4275,9 @@ switch(StartCheck_mode)
 						case THAILAND:
 
 									break;
+						case VIETNAMESE:
+								Printf24("Runing....",RUN_DIS_X,RUN_DIS_Y,RED_COLOR,1,0xffff);
+							break;
 						}
 					StartCheck_mode++;
 					CodeSensorTime_AB=0;
@@ -4280,7 +4305,11 @@ switch(StartCheck_mode)
 							case THAILAND:
 												//unsigned short const Thai_Font17_Pic_54[];   ////54：请输入密码 ?????????????
 												Thai_Draw(Thai_Font17_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
-										break;
+											break;
+							case VIETNAMESE:
+											//unsigned short const Viet_Font24_Pic_54[];   ////54：请输入密码 ?????????????
+											vietnam_print(Viet_Font24_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
+									break;
 							}
 						PassCheck_dis(PASS_HINT_X,PASS_HINT_Y);
 						GLCD_SetWindow_Fill(PASSCODE_INPUT_X, PASSCODE_INPUT_Y, PASSCODE_INPUT_X+100, PASSCODE_INPUT_Y+30, 0xfffff, 0xffff);
@@ -4510,6 +4539,9 @@ switch(StartCheck_mode)
 						case THAILAND:
 
 									break;
+						case VIETNAMESE:
+								
+							break;
 						}
 					}
 				}
@@ -4804,6 +4836,9 @@ if(flag!=0)
 				case THAILAND:
 
 						break;
+				case VIETNAMESE:
+						
+					break;
 				}
 			}
 		else
@@ -4826,6 +4861,9 @@ if(flag!=0)
 				case THAILAND:
 
 						break;
+				case VIETNAMESE:
+						
+					break;
 				}
 			}
 	PressStopDis_flag=1;
@@ -4918,6 +4956,9 @@ else
 						case THAILAND:
 
 								break;
+						case VIETNAMESE:
+								
+							break;
 						}
 					BackLimitError_flag=1;
 					}
@@ -4968,6 +5009,9 @@ else
 											//unsigned short const Thai_Font17_Pic_1[];   ////1：电脑检测完成，请按运行按键 ! >> 点击此处 ???????????????????? ??????????????！》????????
 												Thai_Draw(Thai_Font17_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
 								break;
+						case VIETNAMESE:
+										vietnam_print(Viet_Font24_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
+								 break;
 						}
 					StartCheck_mode++;	
 					orig_wait_time=0;
@@ -5228,6 +5272,9 @@ switch(StartCheck_mode)
 							case THAILAND:
 
 									break;
+							case VIETNAMESE:
+									
+								break;
 							}
 						BackLimitError_flag=1;
 						}
@@ -5275,6 +5322,9 @@ switch(StartCheck_mode)
 							case THAILAND:
 
 									break;
+							case VIETNAMESE:
+									
+								break;
 							}	
 						OriginalError_flag=1;
 						}
@@ -5356,6 +5406,9 @@ switch(StartCheck_mode)
 											//unsigned short const Thai_Font17_Pic_1[];   ////1：电脑检测完成，请按运行按键 ! >> 点击此处 ???????????????????? ??????????????！》????????
 												Thai_Draw(Thai_Font17_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
 												break;
+										case VIETNAMESE:
+												vietnam_print(Viet_Font24_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
+									 break;
 										}
 									StartCheck_mode++;
 									}
@@ -5383,6 +5436,9 @@ switch(StartCheck_mode)
 										case THAILAND:
 
 													break;
+										case VIETNAMESE:
+												
+											break;
 										}
 									StartCheck_mode=9;//5;
 									}
@@ -5409,7 +5465,11 @@ switch(StartCheck_mode)
 											case THAILAND:
 												//unsigned short const Thai_Font17_Pic_54[];   ////54：请输入密码 ?????????????
 												Thai_Draw(Thai_Font17_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
-												 break;											
+														break;
+											case VIETNAMESE:
+												//unsigned short const Viet_Font24_Pic_54[];   ////54：请输入密码 ?????????????
+												vietnam_print(Viet_Font24_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
+														break;
 											}
 										PassCheck_dis(PASS_HINT_X,PASS_HINT_Y);
 										GLCD_SetWindow_Fill(PASSCODE_INPUT_X, PASSCODE_INPUT_Y, PASSCODE_INPUT_X+100, PASSCODE_INPUT_Y+30, 0xfffff, 0xffff);
@@ -5462,6 +5522,9 @@ switch(StartCheck_mode)
 						case THAILAND:
 
 								break;
+						case VIETNAMESE:
+								
+							break;
 						}	
 					}
 				}
@@ -5503,6 +5566,9 @@ switch(StartCheck_mode)
 						case THAILAND:
 
 								break;
+						case VIETNAMESE:
+								
+							break;
 						}
 					}		
 				}
@@ -5537,6 +5603,9 @@ switch(StartCheck_mode)
 					case THAILAND:
 
 							break;
+					case VIETNAMESE:
+							
+						break;
 					}
 				}
 			else		//前极限---ok 恢复
@@ -5565,7 +5634,10 @@ switch(StartCheck_mode)
 						case THAILAND:
 											//unsigned short const Thai_Font17_Pic_1[];   ////1：电脑检测完成，请按运行按键 ! >> 点击此处 ???????????????????? ??????????????！》????????
 												Thai_Draw(Thai_Font17_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
-								break;
+									 break;
+							case VIETNAMESE:
+											vietnam_print(Viet_Font24_Pic_1,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
+									 break;
 						}
 					}
 				if(OutBack_limit==0)
@@ -5637,6 +5709,9 @@ switch(StartCheck_mode)
 						case THAILAND:
 
 									break;
+						case VIETNAMESE:
+								
+							break;
 						}
 					//////////////
 					ACServoMoveBack_MID_SPD();  //交流伺服  中速后退>>>>
@@ -5661,10 +5736,14 @@ switch(StartCheck_mode)
 										break;	
 							case PORTUGAL:	//葡萄牙	
 									Printf24("Use o tempo para digitar a senha",PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
-										break;	
+										break;		
 							case THAILAND:
 												//unsigned short const Thai_Font17_Pic_54[];   ////54：请输入密码 ?????????????
 												Thai_Draw(Thai_Font17_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
+										break;
+							case VIETNAMESE:
+												//unsigned short const Viet_Font24_Pic_54[];   ////54：请输入密码 ?????????????
+												vietnam_print(Viet_Font24_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
 										break;
 							}
 						PassCheck_dis(PASS_HINT_X,PASS_HINT_Y);
@@ -6188,6 +6267,10 @@ if(Board_TestMod==0)//非功能测试模式
 						Thai_Draw(Thai_Font17_Pic_ACSERVO_ERR,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
 
 								break;
+					case VIETNAMESE:
+						vietnam_print(Viet_Font24_Pic_ACSERVO_ERR,START_PROMPT_X2,START_PROMPT_Y2+5,RED_COLOR,1,0xffff);
+
+								break;
 					}
 				
 				ACServoAlarmExec_flag=1;
@@ -6214,6 +6297,10 @@ if(Board_TestMod==0)//非功能测试模式
 					case THAILAND:
 
 					Thai_Draw(Thai_Font17_Pic_ACSERVO_ERR,REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,RED_COLOR,0,0xffff);
+								break;
+					case VIETNAMESE:
+						vietnam_print(Viet_Font24_Pic_ACSERVO_ERR,REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,RED_COLOR,0,0xffff);
+
 								break;
 					}
 				ACServoAlarmExec_flag=1;
