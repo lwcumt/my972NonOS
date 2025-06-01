@@ -708,7 +708,8 @@ switch(Language)
 	Thai_Draw(Thai_Font17_Pic_63,COMPUTER_TEST_HINT_X,COMPUTER_TEST_HINT_Y,RED_COLOR,1,0xffff);
 	 break;
 	case VIETNAMESE: //
-		vietnam_print(Viet_Font24_Pic_63,COMPUTER_TEST_HINT_X,COMPUTER_TEST_HINT_Y,RED_COLOR,1,0xffff);
+		vietnam_print(Viet_Font24_Pic_63_1,COMPUTER_TEST_HINT_X,COMPUTER_TEST_HINT_Y-100,RED_COLOR,1,0xffff);
+		vietnam_print(Viet_Font24_Pic_63_2,COMPUTER_TEST_HINT_X,COMPUTER_TEST_HINT_Y,RED_COLOR,1,0xffff);
 		break;
 	}
 
