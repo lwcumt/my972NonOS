@@ -640,6 +640,10 @@ switch(Language)
 				//unsigned short const Thai_Font17_Pic_9[];   ////9：输入数据范围：????????????????????
 				Thai_Draw((unsigned short *)Thai_Font17_Pic_9,REMIND_WINDOW_X+10,REMIND_WINDOW_Y,BLACK_COLOR,0,0xffff);
 	 break;
+		case VIETNAMESE:	//越南语
+				//Printf24("                   <> ",REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
+				vietnam_print((unsigned char *)Viet_Font24_Pic_9,REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
+				break;
 		}
 Printf24("1         500",REMIND_WINDOW_X+180,REMIND_WINDOW_Y+5,RED_COLOR,0,0xffff);
 }

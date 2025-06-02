@@ -4097,79 +4097,106 @@ switch(keycode)
 											
 									case THAILAND:
 	
-			//Printf24("前极限:    ",x,y,BLACK_COLOR,1,back_color);y+=gap;			
-		//unsigned short const Thai_Font17_Pic_36[];   ////36：前极限 ?????????
-		Thai_Draw((unsigned short*)Thai_Font17_Pic_36,x,y,BLACK_COLOR,1,back_color);y+=gap;
-			
-		//Printf24("中极限:    ",x,y,BLACK_COLOR,1,back_color);y+=gap;
-		//unsigned short const Thai_Font17_Pic_37[];   ////37：中极限 ?????????	
-		Thai_Draw((unsigned short*)Thai_Font17_Pic_37,x,y,BLACK_COLOR,1,back_color);y+=gap;
-			
-			
-		//Printf24("后极限:    ",x,y,BLACK_COLOR,1,back_color);y+=gap;
-		//unsigned short const Thai_Font17_Pic_38[];   ////38：后极限 ?????????	
-		Thai_Draw((unsigned short*)Thai_Font17_Pic_38,x,y,BLACK_COLOR,1,back_color);y+=gap;
-			
-		//Printf24("语言:    ",x,y,BLACK_COLOR,1,back_color);  y+=gap;
-		//unsigned short const Thai_Font17_Pic_39[];   ////39：语言 ????
-		Thai_Draw((unsigned short*)Thai_Font17_Pic_39,x,y,BLACK_COLOR,1,back_color);  y+=gap;
-
-			
-		//Printf24("单位:",x,y,BLACK_COLOR,1,back_color);  y+=gap;
-			//unsigned short const Thai_Font17_Pic_40[];   ////40：单位 ?????
-		Thai_Draw((unsigned short*)Thai_Font17_Pic_40,x,y,BLACK_COLOR,1,back_color);  y+=gap;
-
-
-		//Printf24("提前量:  ",x,y,BLACK_COLOR,1,back_color);y+=gap;
-		//unsigned short const Thai_Font17_Pic_41[];   ////41：提前量 
-		//Thai_Draw(Thai_Font17_Pic_41,x,y,BLACK_COLOR,1,back_color);y+=gap;
-		Printf24("Advanced:",x,y,BLACK_COLOR,1,back_color);y+=gap;
-		
-		//Printf16("标准距离:   ",x,y,BLACK_COLOR,1,back_color);
-		//Printf24("推纸距离:   ",x,y,BLACK_COLOR,1,back_color);
-		//unsigned short const Thai_Font17_Pic_43[];   ////43：推纸距离  ?????????????
-		Thai_Draw((unsigned short*)Thai_Font17_Pic_43,x,y,BLACK_COLOR,1,back_color);
-				
-				
-		x+=PARA_COL_WIDE;y=PARA_START_Y;
-		GLCD_SetWindow_Fill( x, y, x+tx_wide, y+(gap*4-10), TEXT_TAB_BACK_COLOR, TEXT_TAB_BACK_COLOR);//clear text win
-		//Printf24("压纸停机:   ",x,y,BLACK_COLOR,1,back_color);y+=gap;
-		//unsigned short const Thai_Font17_Pic_44[];   ////44：压纸停机 ????????????????
-		Thai_Draw((unsigned short*)Thai_Font17_Pic_44,x,y,BLACK_COLOR,1,back_color);y+=gap;
-				
-		//Printf24("关气距离:   ",x,y,BLACK_COLOR,1,back_color);y+=gap;
-		//unsigned short const Thai_Font17_Pic_46[];   ////46：关气距离  ?????????
-		Thai_Draw((unsigned short*)Thai_Font17_Pic_46,x,y,BLACK_COLOR,1,back_color);y+=gap;
-		
-		
-		switch(MotorType)
-			{
-			case MOTOR_FREQ_5_SPD_RST:
-			case MOTOR_FREQ_3_SPD:
-			case MOTOR_FREQ_3_SPD_RST:
-				//Printf24("光电选择:   ",x,y,BLACK_COLOR,1,back_color);
-				//unsigned short const Thai_Font17_Pic_48[];   ////48：光电选择  ??????????????
-				Thai_Draw((unsigned short*)Thai_Font17_Pic_48,x,y,BLACK_COLOR,1,back_color);
-					break;
-			// // case MOTOR_DC_SERVO:
-			// // case MOTOR_DC670_SERVO:
-				// // Printf16("最大速度:   ",x,y,BLACK_COLOR,1,back_color);y+=gap;
-				// // Printf16("点动速度:   ",x,y,BLACK_COLOR,1,back_color);
-					// // break;
-			case MOTOR_AC_SERVO:
-			case MOTOR_AC_SERVO_REV:
-				//Printf24("运行速度:   ",x,y,BLACK_COLOR,1,back_color);y+=gap;
-				//unsigned short const Thai_Font17_Pic_47[];   ////47：运行速度 ?????????????
-				Thai_Draw((unsigned short*)Thai_Font17_Pic_47,x,y,BLACK_COLOR,1,back_color);y+=gap;
-			
-				//Printf24("光电选择:   ",x,y,BLACK_COLOR,1,back_color);			
-				//unsigned short const Thai_Font17_Pic_48[];   ////48：光电选择  ??????????????
-				Thai_Draw((unsigned short*)Thai_Font17_Pic_48,x,y,BLACK_COLOR,1,back_color);
-			
-					break;
-			}
-											break;
+										//Printf24("前极限:    ",x,y,BLACK_COLOR,1,back_color);y+=gap;			
+										//unsigned short const Thai_Font17_Pic_36[];   ////36：前极限 ?????????
+										Thai_Draw((unsigned short*)Thai_Font17_Pic_36,x,y,BLACK_COLOR,1,back_color);y+=gap;
 											
+										//Printf24("中极限:    ",x,y,BLACK_COLOR,1,back_color);y+=gap;
+										//unsigned short const Thai_Font17_Pic_37[];   ////37：中极限 ?????????	
+										Thai_Draw((unsigned short*)Thai_Font17_Pic_37,x,y,BLACK_COLOR,1,back_color);y+=gap;
+											
+											
+										//Printf24("后极限:    ",x,y,BLACK_COLOR,1,back_color);y+=gap;
+										//unsigned short const Thai_Font17_Pic_38[];   ////38：后极限 ?????????	
+										Thai_Draw((unsigned short*)Thai_Font17_Pic_38,x,y,BLACK_COLOR,1,back_color);y+=gap;
+											
+										//Printf24("语言:    ",x,y,BLACK_COLOR,1,back_color);  y+=gap;
+										//unsigned short const Thai_Font17_Pic_39[];   ////39：语言 ????
+										Thai_Draw((unsigned short*)Thai_Font17_Pic_39,x,y,BLACK_COLOR,1,back_color);  y+=gap;
+
+											
+										//Printf24("单位:",x,y,BLACK_COLOR,1,back_color);  y+=gap;
+											//unsigned short const Thai_Font17_Pic_40[];   ////40：单位 ?????
+										Thai_Draw((unsigned short*)Thai_Font17_Pic_40,x,y,BLACK_COLOR,1,back_color);  y+=gap;
+
+
+										//Printf24("提前量:  ",x,y,BLACK_COLOR,1,back_color);y+=gap;
+										//unsigned short const Thai_Font17_Pic_41[];   ////41：提前量 
+										//Thai_Draw(Thai_Font17_Pic_41,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										Printf24("Advanced:",x,y,BLACK_COLOR,1,back_color);y+=gap;
+										
+										//Printf16("标准距离:   ",x,y,BLACK_COLOR,1,back_color);
+										//Printf24("推纸距离:   ",x,y,BLACK_COLOR,1,back_color);
+										//unsigned short const Thai_Font17_Pic_43[];   ////43：推纸距离  ?????????????
+										Thai_Draw((unsigned short*)Thai_Font17_Pic_43,x,y,BLACK_COLOR,1,back_color);
+												
+												
+										x+=PARA_COL_WIDE;y=PARA_START_Y;
+										GLCD_SetWindow_Fill( x, y, x+tx_wide, y+(gap*4-10), TEXT_TAB_BACK_COLOR, TEXT_TAB_BACK_COLOR);//clear text win
+										//Printf24("压纸停机:   ",x,y,BLACK_COLOR,1,back_color);y+=gap;
+										//unsigned short const Thai_Font17_Pic_44[];   ////44：压纸停机 ????????????????
+										Thai_Draw((unsigned short*)Thai_Font17_Pic_44,x,y,BLACK_COLOR,1,back_color);y+=gap;
+												
+										//Printf24("关气距离:   ",x,y,BLACK_COLOR,1,back_color);y+=gap;
+										//unsigned short const Thai_Font17_Pic_46[];   ////46：关气距离  ?????????
+										Thai_Draw((unsigned short*)Thai_Font17_Pic_46,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										switch(MotorType)
+										{
+										case MOTOR_FREQ_5_SPD_RST:
+										case MOTOR_FREQ_3_SPD:
+										case MOTOR_FREQ_3_SPD_RST:
+											//Printf24("光电选择:   ",x,y,BLACK_COLOR,1,back_color);
+											//unsigned short const Thai_Font17_Pic_48[];   ////48：光电选择  ??????????????
+											Thai_Draw((unsigned short*)Thai_Font17_Pic_48,x,y,BLACK_COLOR,1,back_color);
+												break;
+										// // case MOTOR_DC_SERVO:
+										// // case MOTOR_DC670_SERVO:
+											// // Printf16("最大速度:   ",x,y,BLACK_COLOR,1,back_color);y+=gap;
+											// // Printf16("点动速度:   ",x,y,BLACK_COLOR,1,back_color);
+												// // break;
+										case MOTOR_AC_SERVO:
+										case MOTOR_AC_SERVO_REV:
+											//Printf24("运行速度:   ",x,y,BLACK_COLOR,1,back_color);y+=gap;
+											//unsigned short const Thai_Font17_Pic_47[];   ////47：运行速度 ?????????????
+											Thai_Draw((unsigned short*)Thai_Font17_Pic_47,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										
+											//Printf24("光电选择:   ",x,y,BLACK_COLOR,1,back_color);			
+											//unsigned short const Thai_Font17_Pic_48[];   ////48：光电选择  ??????????????
+											Thai_Draw((unsigned short*)Thai_Font17_Pic_48,x,y,BLACK_COLOR,1,back_color);
+										
+												break;
+										}
+											break;
+			
+										
+									case VIETNAMESE: //越南语
+										vietnam_print((unsigned char*)Viet_Font24_Pic_36,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										vietnam_print((unsigned char*)Viet_Font24_Pic_37,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										vietnam_print((unsigned char*)Viet_Font24_Pic_38,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										vietnam_print((unsigned char*)Viet_Font24_Pic_39,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										vietnam_print((unsigned char*)Viet_Font24_Pic_40,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										vietnam_print((unsigned char*)Viet_Font24_Pic_41,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										vietnam_print((unsigned char*)Viet_Font24_Pic_43,x,y,BLACK_COLOR,1,back_color);y+=gap;
+
+										x+=PARA_COL_WIDE;y=PARA_START_Y;
+										GLCD_SetWindow_Fill( x, y, x+tx_wide, y+(gap*4-10), TEXT_TAB_BACK_COLOR, TEXT_TAB_BACK_COLOR);//clear text win
+										vietnam_print((unsigned char*)Viet_Font24_Pic_44,x,y,BLACK_COLOR,1,back_color);y+=gap;
+										vietnam_print((unsigned char*)Viet_Font24_Pic_46,x,y,BLACK_COLOR,1,back_color);y+=gap;
+			
+										switch(MotorType)
+										{
+										case MOTOR_FREQ_5_SPD_RST:
+										case MOTOR_FREQ_3_SPD:
+										case MOTOR_FREQ_3_SPD_RST:
+											vietnam_print((unsigned char*)Viet_Font24_Pic_48,x,y,BLACK_COLOR,1,back_color);
+												break;
+										case MOTOR_AC_SERVO:
+										case MOTOR_AC_SERVO_REV:
+											vietnam_print((unsigned char*)Viet_Font24_Pic_47,x,y,BLACK_COLOR,1,back_color);y+=gap;
+											vietnam_print((unsigned char*)Viet_Font24_Pic_48,x,y,BLACK_COLOR,1,back_color);
+												break;
+										}
+										break;	
 									}
 								ParameterPage1_dis(Para_sel, 1);
 								if(ButtonTouch_mode==TOU_MODE_CALC)  //	  触摸计算器 下
@@ -4862,6 +4889,9 @@ switch(keycode)
 										case THAILAND:
 												//unsigned short const Thai_Font17_Pic_54[];   ////54：请输入密码 ?????????????
 												Thai_Draw((unsigned short *)Thai_Font17_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
+													break;
+										case VIETNAMESE:	//越南语
+												vietnam_print((unsigned char *)Viet_Font24_Pic_54,PASSCODE_X,PASSCODE_Y,RED_COLOR,1,0xffff);
 													break;
 										}
 									PassCheck_dis(PASS_HINT_X,PASS_HINT_Y);
@@ -9737,10 +9767,13 @@ switch(sel)
 						Printf16("Intervalo de dados           --",REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
 						break;
 					case THAILAND:
-				//Printf24("Data range         to ",REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
-				Printf24("                   <> ",REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
-				//unsigned short const Thai_Font17_Pic_9[];   ////9：输入数据范围：????????????????????
-				Thai_Draw((unsigned short *)Thai_Font17_Pic_9,REMIND_WINDOW_X+10,REMIND_WINDOW_Y,BLACK_COLOR,0,0xffff);
+						//Printf24("Data range         to ",REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
+						Printf24("                   <> ",REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
+						//unsigned short const Thai_Font17_Pic_9[];   ////9：输入数据范围：????????????????????
+						Thai_Draw((unsigned short *)Thai_Font17_Pic_9,REMIND_WINDOW_X+10,REMIND_WINDOW_Y,BLACK_COLOR,0,0xffff);
+							break;
+					case VIETNAMESE:	//越南语
+						vietnam_print((unsigned char *)Viet_Font24_Pic_9,REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
 							break;
 					}
 				Printf24("1         1000",REMIND_WINDOW_X+180,REMIND_WINDOW_Y+5,RED_COLOR,0,0xffff);
@@ -9786,15 +9819,18 @@ if(DivideValue_flag==1)	//等分值功能
 			Printf24("   quotas:",x,y,BLACK_COLOR,0,back_color);//Alíquotas
 				break;
 		case THAILAND:
-			
-		//unsigned short const Thai_Font17_Pic_19[];   ////19：总长 ??????????????
-	Thai_Draw((unsigned short *)Thai_Font17_Pic_19,x,y,BLACK_COLOR,1,back_color);y+=gap;
-		//unsigned short const Thai_Font17_Pic_24[];   ////24：等分值 ???????????
-	Thai_Draw((unsigned short *)Thai_Font17_Pic_24,x,y,BLACK_COLOR,1,back_color);
-			//		Printf24("总长：",x,y,BLACK_COLOR,1,back_color);y+=gap;
-		//	Printf24("等分值：",x,y,BLACK_COLOR,1,back_color);
-		
-	 break;
+				//unsigned short const Thai_Font17_Pic_19[];   ////19：总长 ??????????????
+			Thai_Draw((unsigned short *)Thai_Font17_Pic_19,x,y,BLACK_COLOR,1,back_color);y+=gap;
+				//unsigned short const Thai_Font17_Pic_24[];   ////24：等分值 ???????????
+			Thai_Draw((unsigned short *)Thai_Font17_Pic_24,x,y,BLACK_COLOR,1,back_color);
+					//		Printf24("总长：",x,y,BLACK_COLOR,1,back_color);y+=gap;
+				//	Printf24("等分值：",x,y,BLACK_COLOR,1,back_color);
+			break;
+				
+		case VIETNAMESE:	//越南语
+			vietnam_print((unsigned char *)Viet_Font24_Pic_19,x,y,BLACK_COLOR,1,back_color);y+=gap;
+			vietnam_print((unsigned char *)Viet_Font24_Pic_24,x,y,BLACK_COLOR,1,back_color);
+				break;	
 		}
 	}
 else		//等分数
@@ -9821,12 +9857,16 @@ else		//等分数
 				break;
 		case THAILAND:
 		//unsigned short const Thai_Font17_Pic_19[];   ////19：总长 ??????????????
-	Thai_Draw((unsigned short *)Thai_Font17_Pic_19,x,y,BLACK_COLOR,1,back_color);y+=gap;
-	//unsigned short const Thai_Font17_Pic_25[];   ////25：等分数 ?????????
-	Thai_Draw((unsigned short *)Thai_Font17_Pic_25,x,y,BLACK_COLOR,1,back_color);
-			//		Printf24("总长：",x,y,BLACK_COLOR,1,back_color);y+=gap;
-		//	Printf24("等分值：",x,y,BLACK_COLOR,1,back_color);
-	 break;
+			Thai_Draw((unsigned short *)Thai_Font17_Pic_19,x,y,BLACK_COLOR,1,back_color);y+=gap;
+			//unsigned short const Thai_Font17_Pic_25[];   ////25：等分数 ?????????
+			Thai_Draw((unsigned short *)Thai_Font17_Pic_25,x,y,BLACK_COLOR,1,back_color);
+					//		Printf24("总长：",x,y,BLACK_COLOR,1,back_color);y+=gap;
+				//	Printf24("等分值：",x,y,BLACK_COLOR,1,back_color);
+			break;
+		case VIETNAMESE:	//越南语
+			vietnam_print((unsigned char *)Viet_Font24_Pic_19,x,y,BLACK_COLOR,1,back_color);y+=gap;
+			vietnam_print((unsigned char *)Viet_Font24_Pic_25,x,y,BLACK_COLOR,1,back_color);
+				break;	
 		}
 	}
 Total_size=0;//总长
@@ -10328,7 +10368,10 @@ switch(Language)
 				Printf24("                   <> ",REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
 				//unsigned short const Thai_Font17_Pic_9[];   ////9：输入数据范围：????????????????????
 				Thai_Draw((unsigned short *)Thai_Font17_Pic_9,REMIND_WINDOW_X+10,REMIND_WINDOW_Y,BLACK_COLOR,0,0xffff);
-	 break;
+			 break;
+		case VIETNAMESE:	//越南语
+				vietnam_print((unsigned char *)Viet_Font24_Pic_9,REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
+				break;
 		}
 Printf24("1         500",REMIND_WINDOW_X+180,REMIND_WINDOW_Y+5,RED_COLOR,0,0xffff);
 
@@ -12393,6 +12436,11 @@ switch(Language)
 	
 		//unsigned short const Thai_Font17_Pic_15[];   ////15：取消 ??????
 		Thai_Draw(Thai_Font17_Pic_15,DEL_ALL_CANCEL_X,DEL_ALL_CANCEL_Y,BLACK_COLOR,1,fill_color);
+	 break;
+	case VIETNAMESE:	//越南语
+		vietnam_print((unsigned char *)Viet_Font24_Pic_18,DEL_ALL_HINT_X,DEL_ALL_HINT_Y,BLACK_COLOR,0,fill_color);
+		vietnam_print((unsigned char *)Viet_Font24_Pic_14,DEL_ALL_OK_X,DEL_ALL_OK_Y,BLACK_COLOR,1,fill_color);
+		vietnam_print((unsigned char *)Viet_Font24_Pic_15,DEL_ALL_CANCEL_X,DEL_ALL_CANCEL_Y,BLACK_COLOR,1,fill_color);
 	 break;
 	}
 switch(WorkMode)
