@@ -4399,7 +4399,23 @@ switch(keycode)
 				{
 					if(	WorkMode==AUTO_MODE||WorkMode==MANUAL_MODE)
 					{
-				Printf16("压低无法运行!",430,210,RED_COLOR,0,0xffff);
+						switch(Language)
+						{
+						case CHN_HAN:
+							Printf16("压低无法运行!",430,210,RED_COLOR,0,0xffff);
+								break;
+						case ENGLISH:
+						case INDONSIA:	//印尼
+						case PORTUGAL:	//葡萄牙
+						case THAILAND:
+							Printf16("Press Low!",430,210,RED_COLOR,0,0xffff);
+								break;
+#if (VIETNAM_FUN_EN == 1)
+						case VIETNAMESE:
+							vietnam_print(Viet_Font24_Pic_65, 430,210, RED_COLOR, 0, 0xffff);
+								break;
+#endif
+						}
 					}
 					
 				}
@@ -4408,8 +4424,24 @@ switch(keycode)
 				{
 					if(	WorkMode==AUTO_MODE||WorkMode==MANUAL_MODE)
 					{
-						Printf16("刀低无法运行!",250,165,RED_COLOR,0,0xffff);
-					}
+						switch(Language)
+						{
+						case CHN_HAN:
+							Printf16("刀低无法运行!",250,165,RED_COLOR,0,0xffff);
+								break;
+						case ENGLISH:
+						case INDONSIA:	//印尼
+						case PORTUGAL:	//葡萄牙
+						case THAILAND:
+							Printf16("Knife Low!",250,165,RED_COLOR,0,0xffff);
+								break;
+#if (VIETNAM_FUN_EN == 1)
+						case VIETNAMESE:
+							vietnam_print(Viet_Font24_Pic_64, 250, 165, RED_COLOR, 0, 0xffff);
+							break;
+#endif
+						}
+					}	
 					 
 				}
 				
@@ -10684,7 +10716,7 @@ FlashChip_Dis;
 	if(Language>SPANISH)
 		Language=0;
 #endif
-Language=VIETNAMESE;
+// Language=VIETNAMESE;
 }
 void SaveLanguage(void)  //保存语言
 {

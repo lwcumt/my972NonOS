@@ -3548,7 +3548,8 @@ switch(sel)
 				case CHN_HAN:
 					Printf24("有效(     -     ),无效(0-     )",REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
 					break;
-				case ENGLISH:	
+				case ENGLISH:
+				case VIETNAMESE:	//越南语	
 					Printf24("Valid(    -   ),Invalid(0-    )",REMIND_WINDOW_X+10,REMIND_WINDOW_Y+5,BLACK_COLOR,0,0xffff);
 					break;
 				case INDONSIA:	//印尼

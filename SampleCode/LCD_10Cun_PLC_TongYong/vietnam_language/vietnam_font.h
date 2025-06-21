@@ -4,7 +4,7 @@
 #define VIETNAM_FUN_EN     1   //越南语 功能 开关
 
 
-extern unsigned char const Viet_Font24_Pic_1[];  // 1电脑检测完成,请按运行键!>点此处
+extern unsigned char const Viet_Font24_Pic_1[];  // 1电脑检测完成,点击此处运行
 extern unsigned char const Viet_Font24_Pic_2[];  // 2：程序     ???????
 extern unsigned char const Viet_Font24_Pic_3[]; // 3：步骤
 extern unsigned char const Viet_Font24_Pic_4[]; // 4：标称位置
@@ -69,8 +69,10 @@ extern unsigned char const Viet_Font24_Pic_61[]; // 61：脉冲当量模式
 extern unsigned char const Viet_Font24_Pic_62[]; // 62：请输入脉冲当量
 extern unsigned char const Viet_Font24_Pic_63_1[]; // 63：电脑自检，数据加载.，，，需要六秒，请稍等
 extern unsigned char const Viet_Font24_Pic_63_2[]; // 63_2: 需要六秒，请稍等
-extern unsigned char const Viet_Font24_Pic_ACSERVO_ERR[];
-extern unsigned char const Viet_Font24_Pic_TiengViet[];
+extern unsigned char const Viet_Font24_Pic_64[]; // 64：刀在低位
+extern unsigned char const Viet_Font24_Pic_65[]; // 65：压纸在低位
+extern unsigned char const Viet_Font24_Pic_ACSERVO_ERR[]; // 伺服驱动器报警
+extern unsigned char const Viet_Font24_Pic_TiengViet[]; // 越南语
 
 
 
